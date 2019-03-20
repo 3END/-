@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Solar sistem</title>
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="apple-touch-icon" href="img/space.png">
+	<link rel="icon" href="img/space.png">
+</head>
+<body>
+	<header>
+		<div class="menu">
+			<div class="navbar-brand">
+				<ul>
+					<li><a class="nav-btn" href="index.html" onmouseenter="imgBrandFun();" onmouseleave="unimgBrandFun();"><img src="img/planet.svg" class="img-br" id="img" alt="">Солнечная система</a></li>
+				</ul>			
+			</div>
+			<nav>
+				<ul>
+					<li><a class="nav-btn m-t-5 MWBut" onclick="modalFun1();">О нас</a></li>
+					<li><a class="nav-btn m-t-5 MWBut" onclick="modalFun2();">Источники</a></li>
+				</ul>		
+			</nav>
+		</div>
+		<div class="mobail-menu">
+			<div class="brand">
+				<a href="index.html" onfocus="imgBrandFun();"><img class="img-br" id="img" src="img/planet.svg" alt=""></a>
+			</div>
+			<input class="mob-menu-btn" type="checkbox" id="mobail-menu">
+			<label class="mob-menu" for="mobail-menu">Menu</label>
+			<div class="nav-items">
+				<a class="nav-btn" onclick="modalFun1();">О нас</a>
+				<a class="nav-btn" onclick="modalFun2();">Источники</a>
+			</div>
+		</div>
+	</header>
+		<div class="carusel" data-ride="carusel">
+			<div class="all">
+				<input checked type="radio" name="respond" id="desktop">
+					<article id="slider">
+							<input checked type="radio" name="slider" id="switch1">
+							<input type="radio" name="slider" id="switch2">
+							<input type="radio" name="slider" id="switch3">
+							<input type="radio" name="slider" id="switch4">
+							<input type="radio" name="slider" id="switch5">
+						<div id="slides">
+							<div id="overflow">
+								<div class="image">
+									<article>
+										<div class="slaide">
+											<img src="img/look.jpg">
+										</div>
+									</article>
+									<article>
+										<div class="slaide">
+											<img src="img/sistem.png">
+										</div>
+									</article>
+									<article>
+										<div class="slaide">
+											<img src="img/solar.jpg">
+										</div>
+									</article>
+									<article>
+										<div class="slaide">
+											<img src="img/abstract-Solar-System.jpg">
+										</div>
+									</article>
+									<article>
+										<div class="slaide">
+											<img src="img/solar-sistem.jpg">
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+						<div id="controls">
+							<label for="switch1"></label>
+							<label for="switch2"></label>
+							<label for="switch3"></label>
+							<label for="switch4"></label>
+							<label for="switch5"></label>
+						</div>
+						<div id="active">
+							<label for="switch1"></label>
+							<label for="switch2"></label>
+							<label for="switch3"></label>
+							<label for="switch4"></label>
+							<label for="switch5"></label>
+						</div>
+				</article>
+			</div>
+		</div>
+		<div class="modalWin" id="modW1">
+			<div class="modal-wrapWin">
+				<div class="modal-header"><span class="cross" onclick="cross();">&times;</span>
+				<h3>О нас</h3></div>
+				<div class="modal-body"><p>Данный сайт не преследует комерческих целей.<br/>Сделано в образовательных целях 3END's team 2018-2019г.</p></div>
+				<div class="modal-footer"><p>Адрес тех. поддержки<br/>3ENDS.team@gmail.com</p></div>
+			</div>
+		</div>
+		<div class="modalWin" id="modW2">
+			<div class="modal-wrapWin">
+				<div class="modal-header"><span class="cross" onclick="cross();">&times;</span>
+				<h3>Источники</h3></div>
+				<div class="modal-body">
+					<a class="nav-btn btn"href="https://t.me/fontsch">FONTS > Telegram channel</a>
+					<a class="nav-btn btn"href="https://yandex.ru/images/">IMAGES > Yandex.images</a>
+					<a class="nav-btn btn"href="">INFO > </a>
+					<a class="nav-btn btn"href="">INFO > </a>
+					<a class="nav-btn btn"href="">INFO > </a>
+					<a class="nav-btn btn"href="https://www.flaticon.com/">ICONS > flaticon.com</a>
+				</div>
+				<div class="modal-footer"></div>
+			</div>
+		</div>
+	<main class="section">
+		<h1>Планеты солнечной системы:</h1>
+		<div class="container-for-card" id="cont">
+			<div class="card c-lvl-1" id="crd"><img src="img/huge.jpeg" alt="andromeda"><h2 class="bold">Меркурий</h2><p class="regular">Ближайшая к Солнцу, но и самая малая из планет. Она очень медленно обращается вокруг себя, за полный оборот вокруг светила делая лишь полтора оборота вокруг своей оси. Планета не имеет ни атмосферы, ни спутников, днём раскаляясь до +430 °С, а ночью охлаждаясь до – 180 °С.</p><a href="#p1" class="nav-btn btn italic">Подробнее...</a></div>
+			<div class="card c-lvl-1" id="crd"><img src="img/Venus-Wallpaper-HD.jpg" alt="Alt"><h2 class="bold">Венера</h2><p class="regular">Самая романтичная и ближайшая к Земле планета тоже для жилья не пригодна. Она плотно укутана толстым одеялом облаков из углекислого газа, и при температуре до + 475 °С имеет давление у поверхности, испещрённой кратерами, свыше 90 атмосфер. Венера очень близка Земле размерами и массой.</p><a href="#" class="nav-btn btn italic">Подробнее...</a></div>
+			<div class="card c-lvl-1" id="crd"><img src="img/mars.png" alt="Alt"><h2 class="bold">Марс</h2><p class="regular">Похож на нашу планету по своей структуре. Радиус его в два раза меньше земного, а масса меньше на порядок. Марсианский год в два раза длиннее земного, зато сутки практически той же продолжительности. Марс богаче первых двух планет, имея два спутника: Фобос и Деймос, переводимые с греческого как «страх» и «ужас».</p><a href="#" class="nav-btn btn italic">Подробнее...</a></div>
+			<div class="card c-lvl-1" id="crd"><img src="img/mars.png" alt="Alt"><h2 class="bold">gkfytnf</h2><p class="regular">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla minima inventore sit, deleniti. Deleniti porro, earum suscipit unde perspiciatis facere voluptates nulla omnis maiores consequatur enim, accusamus tempora dolore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet iste accusantium porro animi pariatur ipsa labore, explicabo, optio? Soluta nam, architecto id autem officiis maiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, maiores!</p><a href="#" class="nav-btn btn italic">Подробнее...</a></div>
+			<div class="card c-lvl-2" id="crd"><img src="img/mars.png" alt="Alt"><h2 class="bold">gkfytnf</h2><p class="regular">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto recusandae tempora quaerat fugit iste, voluptate, saepe laborum officia dolores qui nemo beatae reiciendis animi laboriosam, pariatur rem nisi facilis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus ipsum ut, quidem eaque voluptatum ducimus perspiciatis incidunt, ipsam, omnis adipisci soluta. Autem omnis earum facilis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, atque?</p><a href="#" class="nav-btn btn italic">Подробнее...</a></div>
+			<div class="card c-lvl-2" id="crd"><img src="img/mars.png" alt="Alt"><h2 class="bold">gkfytnf</h2><p class="regular">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia laboriosam vel architecto, modi ullam perferendis temporibus eum molestias minima cum inventore beatae, est consequuntur voluptate esse, quas, asperiores ipsum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora explicabo eveniet, in nam impedit quae, sequi placeat est iure natus consequuntur assumenda, mollitia reprehenderit exercitationem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, consequatur.</p><a href="#" class="nav-btn btn italic">Подробнее...</a></div>
+			<div class="card c-lvl-2" id="crd"><img src="img/mars.png" alt="Alt"><h2 class="bold">gkfytnf</h2><p class="regular">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi deleniti, magnam in sequi esse accusantium doloribus temporibus facilis obcaecati harum animi delectus sed beatae recusandae, rerum porro laudantium inventore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, expedita porro error possimus velit qui cumque illo. Facere ipsam cupiditate dignissimos voluptatem voluptate consequuntur voluptates? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, similique.</p><a href="#" class="nav-btn btn italic">Подробнее...</a></div>
+			<div class="card c-lvl-2" id="crd"><img src="img/mars.png" alt="Alt"><h2 class="bold">gkfytnf</h2><p class="regular">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident ea recusandae, fugit maiores odit blanditiis eaque ex ut molestiae autem perspiciatis in dolorem. Quo numquam tempora nulla rerum, sequi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum delectus cupiditate repellendus officia ipsa nobis, totam similique perferendis amet expedita omnis necessitatibus vel deserunt veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, similique.</p><a href="#" class="nav-btn btn italic">Подробнее...</a></div>
+		</div>
+	</main>
+		<main>
+		<div class="wrap-paralax">
+			<div class="paralax">
+				<div class="paralax-cont">
+					<p>Солнечная система – это спаянная силами взаимного притяжения система небесных тел. В нее входят: центральная звезда – Солнце, 8 больших планет с их спутниками, несколько тысяч малых планет, или астероидов, несколько сот наблюдавшихся комет и бесчисленное множество метеорных тел, пыли, газа и мелких частиц. Она сформировалась путём гравитационного сжатия газопылевого облака примерно 4,57 млрд лет назад. </p>
+				</div>
+			</div>
+		</div>
+	</main>
+	<main>
+		<iframe class="video" src="https://www.youtube.com/embed/16BDpzIOTYM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</main>
+	<main>
+		<div class="name-planet" id="p1">
+			<div class="paralax">
+				<div class="paralax-cont">
+					<h1>Меркурий</h1>
+				</div>
+			</div>
+		</div>
+	</main>
+	<main>
+		<div class="wrap">
+			<div class="paralax-cont">
+				<p>Меркурий - ближайшая к Солнцу планета.Древние римляне считали Меркурия покровителем торговли, путешественников и воров, а также вестником богов. Неудивительно, что небольшая планета, быстро перемещающаяся по небу вслед за Солнцем, получила его имя. Меркурий был известен еще с древних времен, однако древние астрономы не сразу поняли, что утром и вечером видят одну и ту же звезду. Меркурий ближе к Солнцу, чем Земля: среднее расстояние от Солнца составляет 0,387 а.е., а расстояние до Земли колеблется от 82 до 217 млн. км. Наклонение орбиты к эклиптике i = 7° - одно из самых больших в Солнечной системе. Ось Меркурия почти перпендикулярна к плоскости его орбиты, а сама орбита очень вытянута (эксцентриситет е = 0,206). Средняя скорость движения Меркурия по орбите - 47,9 км/с. Из-за приливного воздействия Солнца Меркурий попал в резонансную ловушку. Измеренный в 1965 году период его обращения вокруг Солнца (87,95 земных суток) относится к периоду вращения вокруг оси (58,65 земных суток) как 3/2. Три полных оборота вокруг оси Меркурий завершает за 176 суток. За тот же срок планета совершает два оборота вокруг Солнца. Таким образом, Меркурий занимает относительно Солнца то же самое положение на орбите, и ориентировка планеты остаётся прежней. Спутников Меркурий не имеет. Если они и были, то в процессе формирования планеты упали на протомеркурий. Масса Меркурия почти в 20 раз меньше массы Земли (0,055M или 3,3•1023 кг), а плотность почти такая же, как у Земли (5,43 г/см3). Радиус планеты составляет 0,38R (2440 км). Меркурий меньше некоторых спутников Юпитера и Сатурна. </p>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="footer-info"><a href="https://icons8.com" class="footer-info">Icon pack by Icons8</a><p class="footer-info">Create in Sublime Text 3</p></div>
+		<br><div class="footer-info">Icons made by <a href="https://www.freepik.com" class="footer-info" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" class="footer-info" title="Flaticon">www.flaticon.com</a><a href="http://creativecommons.org/licenses/by/3.0/" class="footer-info" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+		<br><div class="creator"><p class="footer-info">@3END_team 2018-2019</p></div>
+	</footer>
+	<script type="text/javascript" src="script/script.js"></script> 
+</body>
+</html>
